@@ -1,0 +1,17 @@
+<group name="windows,custom_soc_lab,">
+
+  <rule id="100001" level="12">
+    <if_sid>60104</if_sid>
+    <description>SOC-LAB CUSTOM: New local user account created on Windows host</description>
+    <mitre><id>T1136.001</id></mitre>
+    <group>authentication,pci_dss_8.1,</group>
+  </rule>
+
+  <rule id="100002" level="14">
+    <if_sid>60106</if_sid>
+    <description>SOC-LAB CUSTOM: User added to Administrators group — Privilege Escalation</description>
+    <mitre><id>T1098</id></mitre>
+    <group>authentication,pci_dss_8.1,</group>
+  </rule>
+
+</group>
